@@ -20,14 +20,7 @@ const app = express();
 connectDB();
 
 // Middleware
-app.use(
-  cors({
-    origin: process.env.FRONTEND_URL || "http://localhost:3000", // Adjust to match your frontend URL
-    methods: ["GET", "POST", "PUT", "DELETE"],
-    allowedHeaders: ["Content-Type", "Authorization"],
-    credentials: true, // If you need to send cookies or auth headers
-  })
-);
+app.use(cors());
 app.use(helmet());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
@@ -43,7 +36,7 @@ app.use(limiter);
 app.use("/reports", express.static(path.join(__dirname, "reports")));
 
 // API routes
-app.use("/api", require("./routes/index"));
+app.use("/", require("./routes/index"));
 
 // Swagger API documentation
 app.use("/api-docs", swaggerUi.serve, swaggerUi.setup(swaggerSpec));

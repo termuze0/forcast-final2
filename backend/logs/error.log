@@ -519,3 +519,4 @@
 {"level":"error","message":"Validation failed for row 281: Invalid productId: 7322d474-2b8d-4c1f-8a36-4a3c2e3efc0a","row":{"date":"1/26/2025","items":"[{\"productId\":\"7322d474-2b8d-4c1f-8a36-4a3c2e3efc0a\",\"quantity\":2,\"price\":45,\"promotion\":true}]","totalAmount":"90"},"timestamp":"2025-06-02T21:50:01.964Z"}
 {"level":"error","message":"Validation failed for row 283: Invalid productId: 7322d474-2b8d-4c1f-8a36-4a3c2e3efc0b","row":{"date":"1/26/2025","items":"[{\"productId\":\"7322d474-2b8d-4c1f-8a36-4a3c2e3efc0b\",\"quantity\":3,\"price\":50,\"promotion\":false}]","totalAmount":"150"},"timestamp":"2025-06-02T21:50:02.155Z"}
 {"level":"error","message":"Validation failed for row 284: Failed to parse items JSON: Unexpected end of JSON input","row":{"date":"","items":"","totalAmount":""},"timestamp":"2025-06-02T21:50:02.156Z"}
+{"level":"error","message":"Registration error: secretOrPrivateKey must have a value","timestamp":"2025-09-17T13:33:28.971Z"}
